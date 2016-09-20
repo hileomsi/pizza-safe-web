@@ -12,6 +12,12 @@ html(ng-app='starter')
     a(ui-sref="about" ui-sref-active="active") About
 
     ui-view
+
+    script
+      var socket = io('http:localhost:3030');
+      var app = feathers().configure(feathers.hooks()).configure(feathers.socketio(socket));
+      window.app = app;
+
     // inject:pre:js
     // endinject
     // inject:js

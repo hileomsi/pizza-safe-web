@@ -20,6 +20,6 @@ module.exports = () => {
       .pipe(babel({ presets: ['es2015'] }))
       .pipe(concat('aplication.all.js'))
       .pipe(uglify())
-      .pipe(sourcemaps.write('www'))
+      .pipe(sourcemaps.write())
       .pipe(gulp.dest('www'));
 }
