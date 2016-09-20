@@ -1,3 +1,5 @@
 {
-  angular.module('app.3dparty',[]);
+  angular.module('app.3dparty',[
+    'ui.router'
+  ]);
 }

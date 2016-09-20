@@ -1,10 +1,18 @@
 doctype html
-html
+html(ng-app='starter')
   head
     title | X-Tudo
+    base(href='/')
     // inject:css
     // endinject
   body
     h1 X-Tudo Show Caramba
+    p {{2 + 3}}
+    a(ui-sref="hello" ui-sref-active="active") Hello
+    a(ui-sref="about" ui-sref-active="active") About
+
+    ui-view
+    // inject:pre:js
+    // endinject
     // inject:js
     // endinject

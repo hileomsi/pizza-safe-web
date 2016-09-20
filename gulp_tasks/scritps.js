@@ -5,11 +5,21 @@ const uglify = require('gulp-uglify');
 const concat = require('gulp-concat');
 
 module.exports = () => {
-  return gulp.src('source/**/*.js')
+  const source = [
+    'source/app.3dparty.js',
+    'source/app.common.js',
+    'source/app.features.js',
+    'source/app.starter.js',
+
+    'source/**/*.module.js',
+    'source/**/*.controller.js'
+  ];
+
+  return gulp.src(source)
       .pipe(sourcemaps.init())
       .pipe(babel({ presets: ['es2015'] }))
       .pipe(concat('aplication.all.js'))
       .pipe(uglify())
-      .pipe(sourcemaps.write('../maps'))
+      .pipe(sourcemaps.write('www'))
       .pipe(gulp.dest('www'));
 }

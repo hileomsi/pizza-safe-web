@@ -1,11 +1,11 @@
 {
   class LoginController{
     constructor(){
-      
+
     }
   }
 
   angular
-    .module('login')
+    .module('app.login')
     .controller('LoginController', LoginController);
 }

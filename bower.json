@@ -16,6 +16,15 @@
   ],
   "dependencies": {
     "angular": "^1.5.8",
-    "semantic": "semantic-ui#^2.2.4"
+    "semantic": "semantic-ui#^2.2.4",
+    "angular-ui-router": "ui-router#^0.3.1"
+  },
+  "overrides": {
+    "semantic": {
+      "main": [
+        "dist/semantic.js",
+        "dist/semantic.css"
+      ]
+    }
   }
 }
