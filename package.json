@@ -1,0 +1,36 @@
+{
+  "name": "pizza-safe-web",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hileomsi/pizza-safe-web.git"
+  },
+  "author": "Hileo Andersson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hileomsi/pizza-safe-web/issues"
+  },
+  "homepage": "https://github.com/hileomsi/pizza-safe-web#readme",
+  "devDependencies": {
+    "browser-sync": "^2.16.0",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-clean": "^0.3.2",
+    "gulp-concat": "^2.6.0",
+    "gulp-htmlmin": "^2.0.0",
+    "gulp-inject": "^4.1.0",
+    "gulp-main-bower-files": "^1.5.3",
+    "gulp-pug": "^3.0.4",
+    "gulp-ruby-sass": "^2.1.0",
+    "gulp-scss": "^1.4.0",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-uglify": "^2.0.0",
+    "gulp-watch": "^4.3.9",
+    "run-sequence": "^1.2.2"
+  }
+}
