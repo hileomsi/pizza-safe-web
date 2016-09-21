@@ -1,1 +1,33 @@
-h1 productEdit
+.product-create
+  .ui.grid.container.centered
+    .seven.wide.column
+      .ui.red.segment
+        h1 Novo Produto
+        .ui.divider
+        .ui.form
+          .field
+            label Nome*
+            input(type='text' ng:model='vm.product.name' placeholder='Digite o nome produto...')
+
+          .field
+            label Descrição
+            textarea(rows='3' ng:model='vm.product.description')
+
+          .field
+            label Categoria*
+            select.dropdown.ui(ng:model='vm.product.category')
+                option Pequeno
+                option Medio
+                option Grande
+                option Tamanho Familia
+
+          .field
+            label Preço*
+            input(type='number' ng:model='vm.user.fone' placeholder='Digite o preco... (Obs: sem virgula)')
+
+          .field
+            label Foto (url)
+            input(type='text' ng:model='vm.user.photo' placeholder='Digite a url da foto...')
+
+          .field
+            button.fluid.button.ui.red(ng:click='vm.save()') Salvar

@@ -8,6 +8,7 @@ const bower = require('./gulp_tasks/bower');
 const scripts = require('./gulp_tasks/scritps');
 const styles = require('./gulp_tasks/styles');
 const views = require('./gulp_tasks/views');
+const imgs = require('./gulp_tasks/imgs');
 const build = require('./gulp_tasks/build');
 
 gulp.task('clean', clean);
@@ -16,6 +17,7 @@ gulp.task('bower', bower);
 gulp.task('scripts', scripts);
 gulp.task('styles', styles);
 gulp.task('views', views);
+gulp.task('imgs', imgs);
 gulp.task('build', build);
 
 gulp.task('serve', ['build'], () => {

@@ -1,1 +1,33 @@
-h1 userCreate
+.user-create
+  .ui.grid.container.centered
+    .seven.wide.column
+      .ui.red.segment
+        h1 Novo Usuario
+        .ui.divider
+        .ui.form
+          .field
+            label Nome*
+            input(type='text' ng:model='vm.user.name' placeholder='Digite seu nome...')
+
+          .field
+            label CPF*
+            input(type='text' ng:model='vm.user.cpf' placeholder='Digite seu CPF (Exemplo: 111.111.111-11)')
+
+          .field
+            label Telefone
+            input(type='text' ng:model='vm.user.telefone' placeholder='Digite seu telefone... (Exemplo: 996153128)')
+
+          .field
+            label Email*
+            input(type='text' ng:model='vm.user.email' placeholder='Digite seu email...')
+
+          .field
+            label Senha*
+            input(type='password' ng:model='vm.user.password' placeholder='Digite seu senha...')
+
+          .field
+            label Confirmação de senha*
+            input(type='password' ng:model='vm.user.confirmpassword' placeholder='Digite seu senha...')
+
+          .field
+            button.fluid.button.ui.red(ng:click='vm.save()') Salvar

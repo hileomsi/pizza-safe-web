@@ -1,7 +1,11 @@
 {
   class UserCreateController{
     constructor(){
+      this.user = {};
+    }
 
+    save(){
+      alert('save');
     }
   }
 

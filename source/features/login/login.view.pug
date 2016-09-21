@@ -1,1 +1,17 @@
-h1 Login
+.login
+  .ui.grid.container.centered
+    .seven.wide.column
+      .ui.red.segment
+        h1 Entre em nossa aplicação
+        .ui.divider
+        .ui.form
+          .field
+            label Email*
+            input(type='text' ng:model='vm.user.name' placeholder='Digite seu email...')
+
+          .field
+            label Senha*
+            input(type='password' ng:model='vm.user.password' placeholder='Digite sua senha...')
+
+          .field
+            button.fluid.button.ui.red(ng:click='vm.login()') Entrar

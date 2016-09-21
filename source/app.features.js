@@ -6,6 +6,8 @@
     'app.productEdit',
     'app.productList',
 
-    'app.userCreate'
+    'app.userCreate',
+
+    'app.home'
   ]);
 }

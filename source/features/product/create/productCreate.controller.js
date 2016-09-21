@@ -1,7 +1,11 @@
 {
   class ProductCreateController{
     constructor(){
+      this.product = {};
+    }
 
+    save(){
+      
     }
   }
 

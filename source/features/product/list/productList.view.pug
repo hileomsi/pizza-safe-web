@@ -1,1 +1,11 @@
-h1 productList
+.product-list
+  .ui.grid.container
+    .four.wide.column(ng:repeat='product in vm.products')
+      .ui.card
+        .image
+          img(src='{{product.photo}}')
+        .content
+          a.header {{product.name}}
+          .meta
+            span.date {{product.price}}
+          .description {{product.description}}
