@@ -4,7 +4,7 @@
     constructor($rootScope){
       this.$rootScope = $rootScope;
       this.isMenu = false;
-      this.isLogged= false;
+      this.isLogged = false;
 
       this.registerEvents();
     }
@@ -14,6 +14,7 @@
 
       this.$rootScope.$on('menu', (isMenu) => {
         console.log('menu');
+
         this.isMenu = isMenu;
       });
 
